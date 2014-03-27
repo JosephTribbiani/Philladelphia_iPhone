@@ -68,9 +68,21 @@
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                     <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4c6-6F-h9p">
+                                                            <rect key="frame" x="0.0" y="12" width="40" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </view>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <outlet property="titleLabel" destination="4c6-6F-h9p" id="2aW-4o-txr"/>
+                                                </connections>
                                             </collectionViewCell>
                                         </cells>
                                         <connections>
@@ -95,9 +107,21 @@
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                     <rect key="frame" x="0.0" y="0.0" width="94" height="40"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dayLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FB0-WR-2jF">
+                                                            <rect key="frame" x="0.0" y="13" width="94" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </view>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <outlet property="titleLabel" destination="FB0-WR-2jF" id="2Eq-NV-q1C"/>
+                                                </connections>
                                             </collectionViewCell>
                                         </cells>
                                         <connections>
@@ -141,6 +165,9 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="backButtonDidTapped:" destination="Lqb-am-cKT" eventType="touchUpInside" id="Brh-6l-xlc"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vqs-rI-TYv">
                                         <rect key="frame" x="97" y="35" width="170" height="26"/>
@@ -150,6 +177,9 @@
                                             <color key="titleColor" red="0.84460698339999996" green="0.84460698339999996" blue="0.84460698339999996" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" red="0.84460698339999996" green="0.84460698339999996" blue="0.84460698339999996" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="selectFromStationDidTapped:" destination="Lqb-am-cKT" eventType="touchUpInside" id="beo-1B-1KF"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XfZ-kO-Uoe">
                                         <rect key="frame" x="97" y="58" width="170" height="26"/>
@@ -159,6 +189,9 @@
                                             <color key="titleColor" red="0.84460698339999996" green="0.84460698339999996" blue="0.84460698339999996" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" red="0.84460698339999996" green="0.84460698339999996" blue="0.84460698339999996" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="selectToStationDidTapped:" destination="Lqb-am-cKT" eventType="touchUpInside" id="Uzi-rN-unI"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NCx-SQ-aQT">
                                         <rect key="frame" x="44" y="35" width="48" height="26"/>
@@ -194,9 +227,12 @@
                                         <state key="normal" image="refresh.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="switchFromToStations:" destination="Lqb-am-cKT" eventType="touchUpInside" id="JyN-ga-lX3"/>
+                                        </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.29189767008111189" green="0.46523468361468112" blue="0.74059311224489788" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.29199445564659027" green="0.46900971004602104" blue="0.74697066326530615" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -204,13 +240,15 @@
                     <navigationItem key="navigationItem" id="3Nh-JN-d7T"/>
                     <connections>
                         <outlet property="hoursCollectionView" destination="xVK-Z6-RWt" id="zYx-nC-bqE"/>
+                        <outlet property="selectFromStationButton" destination="vqs-rI-TYv" id="HtD-tO-Qfi"/>
+                        <outlet property="selectToStationButton" destination="XfZ-kO-Uoe" id="Anx-8a-5Qb"/>
                         <outlet property="tripCollectionView" destination="QUJ-aG-5WV" id="s9U-ts-pEd"/>
                         <outlet property="weekdaysCollectionView" destination="fHW-XK-NSL" id="cif-QC-dHi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yuy-9H-jan" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="836" y="133"/>
+            <point key="canvasLocation" x="738" y="114"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SVI-If-N5q">

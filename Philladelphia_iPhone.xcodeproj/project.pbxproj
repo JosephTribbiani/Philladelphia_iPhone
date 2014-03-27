@@ -53,6 +53,12 @@
 		D80D63BF18E336DF00BC9676 /* PHWeekDaysCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D80D63BE18E336DF00BC9676 /* PHWeekDaysCollectionViewCell.m */; };
 		D80D63C118E33E0A00BC9676 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = D80D63C018E33E0A00BC9676 /* back.png */; };
 		D80D63C618E343D500BC9676 /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = D80D63C518E343D500BC9676 /* refresh.png */; };
+		D80E25FC18E41E8500F0F390 /* PHSelectStationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D80E25FB18E41E8500F0F390 /* PHSelectStationTableViewController.m */; };
+		D80E260018E42A6F00F0F390 /* PHSelectStationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D80E25FF18E42A6F00F0F390 /* PHSelectStationViewController.xib */; };
+		D80E260318E42B7200F0F390 /* PHSelectStationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D80E260218E42B7200F0F390 /* PHSelectStationViewController.m */; };
+		D80E260E18E4477800F0F390 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D80E261018E4477800F0F390 /* Localizable.strings */; };
+		D80E261418E455C700F0F390 /* PHScheduleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D80E261318E455C700F0F390 /* PHScheduleModel.m */; };
+		D80E261618E459DE00F0F390 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D80E261518E459DE00F0F390 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +154,15 @@
 		D80D63BE18E336DF00BC9676 /* PHWeekDaysCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHWeekDaysCollectionViewCell.m; path = Sources/PHWeekDaysCollectionViewCell.m; sourceTree = "<group>"; };
 		D80D63C018E33E0A00BC9676 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = Resources/Images/back.png; sourceTree = "<group>"; };
 		D80D63C518E343D500BC9676 /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = refresh.png; path = Resources/Images/refresh.png; sourceTree = "<group>"; };
+		D80E25FA18E41E8500F0F390 /* PHSelectStationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHSelectStationTableViewController.h; sourceTree = "<group>"; };
+		D80E25FB18E41E8500F0F390 /* PHSelectStationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHSelectStationTableViewController.m; sourceTree = "<group>"; };
+		D80E25FF18E42A6F00F0F390 /* PHSelectStationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PHSelectStationViewController.xib; path = Resources/PHSelectStationViewController.xib; sourceTree = "<group>"; };
+		D80E260118E42B7200F0F390 /* PHSelectStationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHSelectStationViewController.h; path = Sources/PHSelectStationViewController.h; sourceTree = "<group>"; };
+		D80E260218E42B7200F0F390 /* PHSelectStationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHSelectStationViewController.m; path = Sources/PHSelectStationViewController.m; sourceTree = "<group>"; };
+		D80E260F18E4477800F0F390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D80E261218E455C700F0F390 /* PHScheduleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHScheduleModel.h; path = Sources/PHScheduleModel.h; sourceTree = "<group>"; };
+		D80E261318E455C700F0F390 /* PHScheduleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHScheduleModel.m; path = Sources/PHScheduleModel.m; sourceTree = "<group>"; };
+		D80E261518E459DE00F0F390 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D80E261618E459DE00F0F390 /* QuartzCore.framework in Frameworks */,
 				D80D62E918E3032600BC9676 /* CoreGraphics.framework in Frameworks */,
 				D80D62EB18E3032600BC9676 /* UIKit.framework in Frameworks */,
 				D80D62E718E3032600BC9676 /* Foundation.framework in Frameworks */,
@@ -196,6 +212,7 @@
 		D80D62E518E3032600BC9676 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D80E261518E459DE00F0F390 /* QuartzCore.framework */,
 				D80D62E618E3032600BC9676 /* Foundation.framework */,
 				D80D62E818E3032600BC9676 /* CoreGraphics.framework */,
 				D80D62EA18E3032600BC9676 /* UIKit.framework */,
@@ -260,6 +277,7 @@
 		D80D631C18E303D900BC9676 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D80E261018E4477800F0F390 /* Localizable.strings */,
 				D80D63C218E33E0C00BC9676 /* Images */,
 				D80D631D18E303DF00BC9676 /* Interfaces */,
 				D80D62FE18E3032600BC9676 /* Images.xcassets */,
@@ -272,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				D80D62F818E3032600BC9676 /* Main.storyboard */,
+				D80E25FF18E42A6F00F0F390 /* PHSelectStationViewController.xib */,
 			);
 			name = Interfaces;
 			sourceTree = "<group>";
@@ -279,8 +298,12 @@
 		D80D631E18E303F400BC9676 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D80E25FA18E41E8500F0F390 /* PHSelectStationTableViewController.h */,
+				D80E25FB18E41E8500F0F390 /* PHSelectStationTableViewController.m */,
 				D80D637918E3072C00BC9676 /* PHSelectLineViewController.h */,
 				D80D637A18E3072C00BC9676 /* PHSelectLineViewController.m */,
+				D80E260118E42B7200F0F390 /* PHSelectStationViewController.h */,
+				D80E260218E42B7200F0F390 /* PHSelectStationViewController.m */,
 				D80D637C18E3074700BC9676 /* PHScheduleViewController.h */,
 				D80D637D18E3074700BC9676 /* PHScheduleViewController.m */,
 			);
@@ -301,19 +324,9 @@
 		D80D632C18E3055900BC9676 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D80D633618E3058300BC9676 /* PHLine+Create.h */,
-				D80D633718E3058300BC9676 /* PHLine+Create.m */,
-				D80D633818E3058300BC9676 /* PHStation+Utils.h */,
-				D80D633918E3058300BC9676 /* PHStation+Utils.m */,
-				D80D633A18E3058300BC9676 /* PHTrain+Create.h */,
-				D80D633B18E3058300BC9676 /* PHTrain+Create.m */,
-				D80D632918E3055000BC9676 /* DataModel.xcdatamodeld */,
-				D80D633318E3056D00BC9676 /* PHTrain.h */,
-				D80D633418E3056D00BC9676 /* PHTrain.m */,
-				D80D633018E3056D00BC9676 /* PHStation.h */,
-				D80D633118E3056D00BC9676 /* PHStation.m */,
-				D80D632D18E3056D00BC9676 /* PHLine.h */,
-				D80D632E18E3056D00BC9676 /* PHLine.m */,
+				D80E261218E455C700F0F390 /* PHScheduleModel.h */,
+				D80E261318E455C700F0F390 /* PHScheduleModel.m */,
+				D80E261118E455A800F0F390 /* CoreData */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -390,6 +403,26 @@
 				D80D63C018E33E0A00BC9676 /* back.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		D80E261118E455A800F0F390 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D80D633618E3058300BC9676 /* PHLine+Create.h */,
+				D80D633718E3058300BC9676 /* PHLine+Create.m */,
+				D80D633818E3058300BC9676 /* PHStation+Utils.h */,
+				D80D633918E3058300BC9676 /* PHStation+Utils.m */,
+				D80D633A18E3058300BC9676 /* PHTrain+Create.h */,
+				D80D633B18E3058300BC9676 /* PHTrain+Create.m */,
+				D80D632918E3055000BC9676 /* DataModel.xcdatamodeld */,
+				D80D633318E3056D00BC9676 /* PHTrain.h */,
+				D80D633418E3056D00BC9676 /* PHTrain.m */,
+				D80D633018E3056D00BC9676 /* PHStation.h */,
+				D80D633118E3056D00BC9676 /* PHStation.m */,
+				D80D632D18E3056D00BC9676 /* PHLine.h */,
+				D80D632E18E3056D00BC9676 /* PHLine.m */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -474,6 +507,8 @@
 				D80D62F118E3032600BC9676 /* InfoPlist.strings in Resources */,
 				D80D62FA18E3032600BC9676 /* Main.storyboard in Resources */,
 				D80D63C618E343D500BC9676 /* refresh.png in Resources */,
+				D80E260E18E4477800F0F390 /* Localizable.strings in Resources */,
+				D80E260018E42A6F00F0F390 /* PHSelectStationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,8 +546,10 @@
 				D80D63A518E30B9300BC9676 /* AFHTTPRequestOperation.m in Sources */,
 				D80D62F718E3032600BC9676 /* PHAppDelegate.m in Sources */,
 				D80D63AE18E30B9300BC9676 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				D80E260318E42B7200F0F390 /* PHSelectStationViewController.m in Sources */,
 				D80D63A918E30B9300BC9676 /* AFSecurityPolicy.m in Sources */,
 				D80D632418E304C800BC9676 /* PHNetworkingManager.m in Sources */,
+				D80E261418E455C700F0F390 /* PHScheduleModel.m in Sources */,
 				D80D63B218E30B9300BC9676 /* UIImageView+AFNetworking.m in Sources */,
 				D80D63A818E30B9300BC9676 /* AFNetworkReachabilityManager.m in Sources */,
 				D80D63AD18E30B9300BC9676 /* AFURLSessionManager.m in Sources */,
@@ -522,6 +559,7 @@
 				D80D637E18E3074700BC9676 /* PHScheduleViewController.m in Sources */,
 				D80D632F18E3056D00BC9676 /* PHLine.m in Sources */,
 				D80D62F318E3032600BC9676 /* main.m in Sources */,
+				D80E25FC18E41E8500F0F390 /* PHSelectStationTableViewController.m in Sources */,
 				D80D63AC18E30B9300BC9676 /* AFURLResponseSerialization.m in Sources */,
 				D80D63B118E30B9300BC9676 /* UIButton+AFNetworking.m in Sources */,
 				D80D633C18E3058300BC9676 /* PHLine+Create.m in Sources */,
@@ -571,6 +609,15 @@
 				D80D630F18E3032700BC9676 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D80E261018E4477800F0F390 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D80E260F18E4477800F0F390 /* Base */,
+			);
+			name = Localizable.strings;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -735,6 +782,7 @@
 				D80D631718E3032700BC9676 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D80D631818E3032700BC9676 /* Build configuration list for PBXNativeTarget "Philladelphia_iPhoneTests" */ = {
 			isa = XCConfigurationList;
@@ -743,6 +791,7 @@
 				D80D631A18E3032700BC9676 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

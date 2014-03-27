@@ -10,4 +10,6 @@
 
 @interface PHHoursCollectionViewCell : UICollectionViewCell
 
+@property (nonatomic, copy) NSString* title;
+
 @end

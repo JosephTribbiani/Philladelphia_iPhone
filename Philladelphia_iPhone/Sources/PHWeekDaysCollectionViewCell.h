@@ -10,4 +10,6 @@
 
 @interface PHWeekDaysCollectionViewCell : UICollectionViewCell
 
+@property (nonatomic, copy) NSString* title;
+
 @end
